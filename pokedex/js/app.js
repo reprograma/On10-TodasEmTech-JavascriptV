@@ -1,13 +1,21 @@
 let pokemonList = [];
 let pokemonTypes = []
 
-async function fetchTypesAsync() {
-    const response = await fetch("https://pokeapi.co/api/v2/type")
-    const data = await response.json()
+function fetchTypes() {
+    const request = new XMLHttpRequest()
+    request.open("GET", "https://pokeapi.co/api/v2/type", false)
 
-    pokemonTypes = data.results.map(function (type) {
-        return type.name
-    });
+    request.onload = function () {
+        console.log('1. Executei a requisição')
+
+        const data = JSON.parse(request.response)
+
+        pokemonTypes = data.results.map(function (type) {
+            return type.name
+        });
+    };
+
+    request.send()
 }
 
 async function fetchPokemonsAsync() {

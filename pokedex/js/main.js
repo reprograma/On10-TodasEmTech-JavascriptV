@@ -1,11 +1,8 @@
-// Bloco assíncrono para chamar métodos assíncronos do arquivo app, assim que a página carrega
-!async function () {
-  await fetchTypesAsync()
-  loadComboBoxTypes(pokemonTypes)
+fetchTypes()
+loadComboBoxTypes(pokemonTypes)
 
-  await fetchPokemonsAsync()
-  loadPokemonList(pokemonList)
-}();
+fetchPokemonsAsync()
+loadPokemonList(pokemonList)
 
 function loadComboBoxTypes(types) {
   types.map(t => $('#filter-type').append(`<option>${t}</option>`))
@@ -102,8 +99,8 @@ async function viewPokemon(e) {
 
   $("#id").val(pokemon.id)
   $(".pokemon-sprite-m").attr('src', pokemon.sprites.other["official-artwork"].front_default)
-  $(".pokemon-sprite-m").attr('alt', `${capitalize(pokemon.id.toString().padStart(3,'0'))} ${capitalize(pokemon.name)}`)
-  $(".pokemon-name-m").text(`#${capitalize(pokemon.id.toString().padStart(3,'0'))} ${capitalize(pokemon.name)}`)
+  $(".pokemon-sprite-m").attr('alt', `${capitalize(pokemon.id.toString().padStart(3, '0'))} ${capitalize(pokemon.name)}`)
+  $(".pokemon-name-m").text(`#${capitalize(pokemon.id.toString().padStart(3, '0'))} ${capitalize(pokemon.name)}`)
 
   const types = pokemon.types
     .map(t => `<span class="mr-1 badge background-${t.type.name}">${capitalize(t.type.name)}</span>`)
