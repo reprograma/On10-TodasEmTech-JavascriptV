@@ -1,12 +1,13 @@
 # Javascript V
 
-**Objetivo geral:** Conseguir realizar requisições em API 
+**Objetivo geral:**  Fortalecer aprendizado para realização do projeto III
 
-**Objetivo específico:** Aprender os conceitos de cliente e servidor, o que é uma API, utilizar o fetch() pra fazer comunicações com API. 
+**Objetivo específico:** Praticar requisição em APIs, sem muito foco na teoria. Introduzir alguns conceitos para a trilha de React.
 
 ## Tabela de Conteúdos
 
 | Tópico      | Tipo |
 | ----------- | ----------- |
 | 👩🏾‍🏫 [XMLHttpRequest](01.%20XMLHttpRequest/README.md) | Lição; Exercício; |
+| 👩🏾‍🏫 [Funções](01.%20Javascript/01.%20Funções.md) | Lição; Exercício; |
 
