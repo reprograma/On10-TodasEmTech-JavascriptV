@@ -13,6 +13,6 @@ function ask(question, yes, no) {
   function() { alert("You canceled the execution."); }
 ); */
 
-// Solução do exercicio
+// Solução do exercicio realizado na aula.
 
 ask( "Do you agree?", ()=> { alert("You agreed."); }, ()=> { alert("You canceled the execution."); } ); 
