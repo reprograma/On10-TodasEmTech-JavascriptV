@@ -18,9 +18,11 @@ function fetchTypes() {
     request.send()
 }
 
-async function fetchPokemonsAsync() {
+//async function fetchPokemonsAsync() {
     // https://borgesdn.github.io/pokedex-source/pokedex.json
 }
+
+const 
 
 async function getPokemonAsync(id) {
     // https://pokeapi.co/api/v2/pokemon/{id}
