@@ -9,5 +9,8 @@
 | Tópico      | Tipo |
 | ----------- | ----------- |
 | 👩🏾‍🏫 [XMLHttpRequest](01.%20XMLHttpRequest/README.md) | Lição; Exercício; |
-| 👩🏾‍🏫 [Funções](01.%20Javascript/01.%20Funções.md) | Lição; Exercício; |
+| 👩🏾‍🏫 [Funções](02.%20Javascript/01.%20Funções.md) | Lição; Exercício; |
+| 👩🏾‍🏫 [Parâmetro Rest](02.%20Javascript/02.%20Parâmetro%20Rest.md) | Lição; |
+| 👩🏾‍🏫 [Operador Spread](02.%20Javascript/03.%20Operador%20Spread.md) | Lição; |
+| 👩🏾‍🏫 [Atribuição Destruct](02.%20Javascript/04.%20Atribuição%20Destruct.md) | Lição; |
 
