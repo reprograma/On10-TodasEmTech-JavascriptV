@@ -16,6 +16,7 @@ imagem.then(r => r.blob())
     imagemDom.src = blobUrl;
 }); 
 
+imagem();
 //Tentativa I 
 
 /* const myImage = document.querySelector('img');

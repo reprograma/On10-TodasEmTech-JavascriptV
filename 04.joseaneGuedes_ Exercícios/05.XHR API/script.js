@@ -44,15 +44,10 @@ xhr.onload = function () { console.log(xhr.response) }
 xhr.send(); 
  */
 
+
 //requisicao IV: 
-/* !async function () { 
-    const response = await fetch("https://ghibliapi.herokuapp.com/films?director=Hayao Miyazaki") 
-    console.log(await response.json()) }()  */
 
-
-//requisicao V: 
-
-function loadFilms(director) {
+/* function loadFilms(director) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', `https://ghibliapi.herokuapp.com/films?director=${director}`)
     xhr.responseType = 'json'
@@ -62,4 +57,9 @@ function loadFilms(director) {
     }
     xhr.send();
 }
-loadFilms('Hayao Miyazaki')
+loadFilms('Hayao Miyazaki') */
+
+//requisicao IV com codigo refatorado:
+!async function () { 
+    const response = await fetch("https://ghibliapi.herokuapp.com/films?director=Hayao Miyazaki") 
+    console.log(await response.json()) }() 
