@@ -11,3 +11,10 @@
   <a href="github.com/nome-da-aluna" target="_blank">Github</a>
 </div>
 */
+
+!async function buscaTextoAsync() {
+   const response = await fetch("./")
+   console.log(await.response.json())
+
+}()
+

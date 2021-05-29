@@ -10,3 +10,14 @@
 // [] criar uma função chamada buscaImagem()
 // [] mudar para async/await
 // [] usar arrow function
+
+
+!async function buscaImagem() {
+const imagemDino = await fetch("https://raw.githubusercontent.com/jaquelinedealmeida/On10-TodasEmTech-JavascriptV/master/03.%20Exercícios/02.%20Fetch%20Imagem/meme.jpg")
+   .then((resposta) => resposta)
+   .catch((error) =>{
+       console.log(error);
+   })
+
+    buscaImagem()
+}
